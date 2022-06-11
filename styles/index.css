@@ -1,0 +1,251 @@
+/* Main */
+.title {
+    margin: 0;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.undertitle {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 1.5em;
+    letter-spacing: 2px;
+    margin: 70px 0 40px 0;
+    position: relative;
+}
+
+h1::after {
+    content: "";
+    margin: auto;
+    width: 60px;
+    height: 2.5px;
+    border-radius: 1px;
+    position: absolute;
+    bottom: -7px;
+    left: 0;
+    right: 0;
+    background: black;
+    opacity: .2;
+}
+
+.cta {
+    background-color: #6D5A4C;
+    color: white;
+    transition: .3s;
+    margin: 20px 0 30px 0;
+    width: 200px;
+    padding: 18px 30px;
+    transition: all .3s;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.cta:hover {
+    cursor: pointer;
+    background-color: #57483d;
+}
+
+/* Section 1: welcome image */
+.homepage-image-wrapper {
+    height: 33vh;
+    background-image: url("/images/Miaa.JPG");
+    background-position-x: center;
+    background-position-y: 36.5%;
+    background-size: cover;
+}
+
+.homepage-blur {
+    width: 100%;
+    height: 100%;
+    background: rgb(109,90,76);
+    background: radial-gradient(circle, rgba(109,90,76,0.3) 50%, rgba(109,90,76,0.5) 100%);
+}
+
+/* Section 2: introduction */
+.introduction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.intro-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.intro-text {
+    max-width: 500px;
+}
+
+.intro-img {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.intro-img img {
+    width: 70%;
+}
+
+/* Section 3: Gallery */
+.gallery {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gallery-wrapper {
+    margin: 0 auto;
+}
+
+.gallery-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(232px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    text-align: center;
+}
+
+.gallery-image-wrapper img {
+    width: 100%;
+    transition: all .3s;
+} 
+
+/* Section 4: Carousel latest posts */
+.loader-container {
+    width: 100vw;
+    height: 46px;
+    text-align: center;
+}
+
+.carousel {
+    margin: 70px 0;
+}
+
+.c-main {
+    width: 100%;
+    display: block;
+    overflow: hidden;
+}
+
+.c-container {
+    width: 200vw;
+    height: 352px;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    transition: all .5s;
+}
+
+.postinfo {
+    display: flex;
+    color: transparent;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 25vw;
+    height: 25vw;
+    transition: all .3s;
+}
+
+.postinfo:hover{
+    color: white;
+    background-color: rgba(.3, .3, .3, .3);
+}
+
+.postinfo hr {
+    background-color: transparent;
+    width: 20vw;
+    margin: 0 auto;
+}
+
+.slide{
+    width: 25vw;
+    height: 25vw;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+  
+.c-buttons {
+    width: 97.5%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+}
+
+.btn {
+    border: none;
+    background-color: transparent;
+}
+
+.btn i {
+    position: absolute;
+    margin-top: 10vw;
+    z-index: 1;
+    font-size: 26px;
+    width: 26px;
+    border: 1px solid black;
+    background-color: rgba(255, 255, 255, .7);
+    padding: 5px;
+    border-radius: 100px;
+    transition: all .3s;
+}
+
+.btn i:hover {
+    background-color: rgba(200, 200, 200, .5);
+    padding: 6px;
+}
+
+/* Media queries */
+@media screen and (max-width: 750px) {
+    .intro-wrapper {
+        flex-direction: column-reverse;
+    }
+
+    .intro-img {
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .hide-on-mobile {
+        display: none;
+    }
+
+    .slide {
+        width: 100vw;
+        height: 100vw;
+    }
+
+    .btn-prev, .btn-next {
+        display: none;
+    }
+    
+    .postinfo{
+        color: white;
+        background-color: rgba(.3, .3, .3, .3);
+        width: 50%;
+        height: 100%;
+    }
+
+    .gallery-wrapper {
+        margin: 0 10px;
+    }
+
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Miamo | Home</title>
+        <script src="https://kit.fontawesome.com/ce6a7b2aaf.js" crossorigin="anonymous"></script>
+        <link href="styles/contact.css" rel="stylesheet">
+        <link href="styles/common.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="A baby blog">
+        <meta charset="UTF-8">
+        <!-- Hotjar Tracking Code for https://visionary-wisp-bbd995.netlify.app/ -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:2992282,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+    </head>
+    <body>
+        <header>
+            <div class="header-wrapper">
+                <div class="logo-wrapper">
+                    <a class="logo" href="index.html">
+                        <div class="title">miamo.</div>
+                        <div class="undertitle">A baby blog</div>
+                    </a>
+                </div>
+                <div class="burger"><i class="fas fa-bars"></i></div>
+                <div class="menu-wrapper">
+                    <ul class="menu-items">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a class="current" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <main>
+            <h1>Contact us</h1>
+            <section class="contact-section">
+                <div class="contact-wrapper">
+                    <div class="contact-text">
+                        <p>Wan't to ask me a question?</p>
+                        <p>Drop me a message from the form below!</p>
+                        <p>I'll get back to you as soon as I finish playing. :)</p>
+                    </div>
+                    <form id="contact-form">
+                        <div class="form-row double">
+                            <div>
+                                <input aria-label="Name" placeholder="Name" type="text" id="name">
+                                <div class="form-error" id="name-error">Name should be more than 5 characters long.</div>
+                            </div>
+                            <div>
+                                <input aria-label="email" placeholder="Email" type="email" id="email">
+                                <div class="form-error" id="email-error">Please enter valid email address</div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <input aria-label="Subject" placeholder="Subject" type="text" id="subject">
+                            <div class="form-error" id="subject-error">Subject should contain at least 15 characters.</div>
+                        </div>
+                        <div class="form-row">
+                            <textarea aria-label="Message" placeholder="Message" type="text" id="message"></textarea>
+                            <div class="form-error" id="message-error">Your message must contain at least 20 characters.</div>
+                        </div>
+                        <div class="cta-wide">
+                        <button class="submit-btn">Send</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="mia-love"></div>
+            </section>
+        </main>
+        <footer>
+            <div class="top">
+                <div class="footer-left">
+                    <a class="logo" href="index.html">
+                        <div class="title">miamo.</div>
+                    </a>
+                </div>
+                <div class="footer-center">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">Gallery (coming)</a></li>
+                    </ul>
+                </div>
+                <div class="footer-right">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+            </div>
+            <div class="bottom">
+                <p class="copyright">&copy; Miamo 2022</p>
+            </div>
+        </footer>
+    </body>
+    <script src="/js/contact.js"></script>
+    <script src="/js/script.js"></script>
+</html>

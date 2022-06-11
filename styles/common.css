@@ -1,0 +1,288 @@
+body {
+    margin: 0;
+    background-color: #F9F3EC;
+}
+
+h1, h2, h3, p, .undertitle {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.loader {
+    font-size: 46px;
+    opacity: 0.3;
+}
+
+.api-error {
+    color: #dc3545;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.api-error a {
+    color: #dc3545;
+}
+
+.api-error a:hover {
+    color: brown;
+
+}
+
+/* Header */
+header {
+    background-color: #FBCEB1;
+    position: relative;
+    /* border-bottom: 1px solid black; */
+    min-height: 10vh;
+}
+
+.header-wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.logo-wrapper {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.logo {
+    text-decoration: none;
+    color: #414141;
+}
+
+.logo p {
+    margin-top: 0;
+    text-align: center;
+}
+
+.burger {
+    display: none;
+    position: absolute;
+    left: 30px;
+    color: black;
+}
+
+.menu-wrapper {
+    display: flex;
+    justify-content: right;
+    width: 100%;
+    max-height: 50px;
+    /* align-items: center; */
+    /* z-index: 1; */
+}
+
+.menu-items {
+    display: flex;
+    flex-direction: row;
+    margin-right: 10px;
+}
+
+.current {
+    opacity: 1 !important;
+    text-decoration: underline rgba(.3, .3, .3, .2) !important;
+}
+
+.menu-items li {
+    list-style: none;
+}
+
+.menu-items a {
+    text-decoration: none;
+    margin-left: 20px;
+    display: inline-block;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    opacity: 0.6;
+}
+
+.menu-items a:hover {
+    opacity: 1;
+    transition: all 0.4s;
+}
+
+.nav-active {
+    transform: translateX(0%) !important;
+}
+
+/* Main */
+.title {
+    margin: 0;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.undertitle {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 1.5em;
+    letter-spacing: 2px;
+    margin: 70px 0 40px 0;
+    position: relative;
+}
+
+h1::after {
+    content: "";
+    margin: auto;
+    width: 60px;
+    height: 2.5px;
+    border-radius: 1px;
+    position: absolute;
+    bottom: -7px;
+    left: 0;
+    right: 0;
+    background: black;
+    opacity: .2;
+}
+
+.cta {
+    background-color: #6D5A4C;
+    color: white;
+    transition: .3s;
+    margin: 20px 0 30px 0;
+    width: 200px;
+    padding: 18px 30px;
+    transition: all .3s;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.cta:hover {
+    cursor: pointer;
+    background-color: #57483d;
+}
+
+/* Footer */
+footer {
+    max-height: 800px;
+    background-color: #D9C4AD;
+}
+
+.top {
+    display: flex;
+}
+
+.top div {
+    flex: 1;
+    height: 200px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-center ul {
+    list-style: none;
+}
+
+.footer-center ul li {
+    padding: 2px;
+}
+
+.footer-center ul li a {
+    text-decoration: none;
+    color: black;
+    opacity: 0.7;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
+.footer-center ul li a:hover {
+    opacity: 1;
+    color: #414141;
+}
+
+.footer-right {
+    font-size: 22px;
+    opacity: 0.6;
+}
+
+.footer-right i {
+    margin: 4px;
+}
+
+.bottom {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.copyright {
+    position: relative;
+    font-size: 12px;
+}
+
+.copyright::before {
+    content: "";
+    margin: 0 auto;
+    width: 150px;
+    height: 1.5px;
+    border-radius: 1px;
+    position: absolute;
+    bottom: 27px;
+    left: 0;
+    right: 0;
+    background-color: black;
+    opacity: .5;
+}
+
+/* Media queries */
+@media screen and (max-width: 750px) {
+    .header-wrapper {
+        flex-direction: column-reverse;
+    }
+
+    .menu-items {
+        position: absolute;
+        left: 0px;
+        height: 42vh;
+        top: 114.4px;
+        width: 30%;
+        flex-direction: column;
+        align-items: left;
+        transform: translateX(-100%);
+        transition: 0.3s ease-in;
+        background-color: #FBCEB1;
+        z-index: 10;
+    }
+
+    .menu-items a {
+        padding: 0;
+        height: 40px;
+        margin-top: 20px;
+    }
+    
+    .burger {
+        display: block;
+        font-size: 32px;
+        bottom: 43px;
+    }
+
+    .undertitle {
+        margin-bottom: 20px;
+    }
+
+    .top {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-center ul {
+        padding: 0;
+    }
+
+    .footer-right {
+        margin: 20px 0;
+    }
+
+}
