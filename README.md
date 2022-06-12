@@ -13,6 +13,10 @@ The project contains the following pages:
 - List of blog posts dynamically built using REST API.
 - Blog specific page for each blog post built using query string parameter. Contains more text and an image modal for the feature image. 
 
+## What I learned
+
+This project really challenged me with the javascript. I needed to create a carousel which featured latest posts, in addition to a pop up modal when feature image is clicked. I gained a better understanding for javascript and find it easier to write simple functions and have a correct use of methods. I still have a lot to learn, the sort function is not working well as it doesn't sort all the posts, but it will be fun to improve the site later. I have plans to add a 'One line a day' page, comment field for the blog specific pages, and a filter to start with. As the page grows and I learn more, I will add to it.
+
 ## Built With
 
 - HTML
