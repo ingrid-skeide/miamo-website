@@ -1,8 +1,6 @@
 # Miamo
 ## A Baby Blog
 
-![image](https://user-images.githubusercontent.com/52622303/164316813-4b12d99f-aeb7-4069-85cf-e72b3a50ac99.png)
-
 This is the exam project at the end of the first year of my studies at Noroff. The task was to create a blog to showcase what I've learned over this year. I chose to create a baby blog because I had a baby last year, and that naturally creates a lot of inspiration in everything in my daily life.
 
 ## Description
