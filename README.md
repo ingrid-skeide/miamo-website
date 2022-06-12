@@ -23,6 +23,8 @@ This project really challenged me with the javascript. I needed to create a caro
 - CSS
 - Javascript
 - Wordpress
+  - Custom Post Types
+  - Custom Fields
 
 ## Getting Started
 
